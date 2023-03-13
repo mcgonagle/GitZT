@@ -70,7 +70,7 @@ As Pittsburgh Steeler hall of famer [Iron Mike Webster](https://www.steelers.com
 
 > Do not be afraid to fail. You're going to fail, believe me. No one's keeping score. All we have to do is finish the game. Then we'll all be winners.
 
-Iron Mike Webster
+
 
 ## The benefits of Zero Trust as Code (ZTaC) are:
 * **Repeatability** – The very act of modeling your infrastructure in code provides repeatability. Every configuration element is captured in the code and will enforce that defined configuration each and every time it is run. IaC provides confidence that the infrastructure is configured and operating in the way it is supposed to be.
