@@ -1,10 +1,10 @@
 # GitZT
 Git ZeroTrust is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to ZeroTrust configuration and operations enabling an approach formally described as ZeroTrust as Code (ZTaC).
 
-# @mcgonagle's Definition of DevOps
+# [@mcgonagle's](https://github.com/mcgonagle) Definition of DevOps
 A Technical and Cultural Focus on Teamwork and the Mission to Deliver Software Securely.
 
-# @mcgonagle's Definition of Zero Trust
+# [@mcgonagle's](https://github.com/mcgonagle) Definition of Zero Trust
 A trust mindset where all activity is provided the least amount of access, and all connectivity is authenticated and continuously verified to be the expected user. 
 
 # Importance of a Focus on the Developer Experience (DX)
