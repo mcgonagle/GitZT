@@ -4,7 +4,7 @@ Git ZeroTrust is an operational framework that takes DevOps best practices used 
 # A Definition of DevOps
 A Technical and Cultural Focus on Teamwork and the Mission to Deliver Software Securely.
 
-# The [DevOps.Diet](https://devops.diet)
+# [The DevOps.Diet](https://devops.diet)
 - **Define Success**: Set Overall Mission and Iterative Goals
 - **Identify Your Path**: Build, Implement, and Improve Living Processes with Purpose
 - **Execute as a Team**: Trust, Communicate, and Cooperate
