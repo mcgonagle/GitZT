@@ -8,10 +8,9 @@ A Technical and Cultural Focus on Teamwork and the Mission to Deliver Software S
 A trust mindset where all activity is provided the least amount of access, and all connectivity is authenticated and continuously verified to be the expected user. 
 
 # Importance of a Focus on the Developer Experience (DX)
-```
-And, one of the things I've always found is that you've got to start with the customer experience and work backwards for the technology. You can't start with the technology and try to figure out where you're going to try to sell it.
-- Steve Jobs
-```
+> And, one of the things I've always found is that you've got to start with the customer experience and work backwards for the technology. You can't start with the technology and try to figure out where you're going to try to sell it.
+> - Steve Jobs
+
 
 ## Collaborative Automation is Key
 Collaborative automation is simply teams of engineers and administrators working together, towards a common goal, utilizing automation tooling to make their jobs easier, more efficient, and stress free. A secondary DevOps practice configuration management is important to I2aC, and has undergone a fundamental shift over the last few years as social coding via sites like github.com have become increasingly popular. Network teams are able to share their software modeled BIG-IPs with other team members, solicit feedback, find bugs, and squash those bugs all because their BIG-IPs are modeled in code.
