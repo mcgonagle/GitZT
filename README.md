@@ -8,7 +8,7 @@ A Technical and Cultural Focus on Teamwork and the Mission to Deliver Software S
 A trust mindset where all activity is provided the least amount of access, and all connectivity is authenticated and continuously verified to be the expected user. 
 
 # Importance of a Focus on the Developer Experience (DX)
-> And, one of the things I've always found is that you've got to start with the customer experience and work backwards for the technology. You can't start with the technology and try to figure out where you're going to try to sell it.
+> *And, one of the things I've always found is that you've got to start with the customer experience and work backwards for the technology. You can't start with the technology and try to figure out where you're going to try to sell it.*
 > - Steve Jobs
 
 
