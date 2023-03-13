@@ -66,7 +66,7 @@ The agile scrum methodology is a project management system that relies on increm
 
 The scrim methodology is named after the line of scrimmage in Football and refers to the whole team moving the line of scrimmage forward every play. Plays are tasks that are performed and have a corresponding yardage associated with completing them. Teams try to earn as many yards as possible each play, and try to score touchdowns for every 100 yards gained. The number of touchdowns scored for each “game” is recorded and can be compared to other teams inside or outside the organization. Scrim uses Football style playbooks and symbols during pre-play huddles to increase the operational awareness of the Development and Operations teams. This provides a visual situational awareness of how the entire team is tasked and what the team is trying to accomplish with each play. This increased visibility results in team members learning what others on the team are struggling with and increases empathy and trust.  
 
-As Pittsburgh Steeler hall of famer [Iron Mike Webster](https://www.steelers.com/history/bios/webster_mike#:~:text=No one's keeping score.,at the age of 50.) said at his hall of fame acceptance speech.
+As Pittsburgh Steeler hall of famer [Iron Mike Webster](https://www.steelers.com/history/bios/webster_mike) said at his hall of fame acceptance speech.
 
 > Do not be afraid to fail. You're going to fail, believe me. No one's keeping score. All we have to do is finish the game. Then we'll all be winners.
 
