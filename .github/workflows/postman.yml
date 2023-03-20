@@ -1,7 +1,6 @@
-name: Automated API tests using Postman CLI
+name: Postman API R2 Test
 
 on: workflow_dispatch
-
 
 jobs:
   automated-api-tests:
@@ -15,4 +14,4 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "797248-be6fd81f-a915-4ec2-9bca-c682291b5854"
+          postman collection run "797248-cd363e71-b445-423c-ad11-c3889f4e9656" -e "797248-91e84a28-3d32-470f-bee2-96a9d61be153"
