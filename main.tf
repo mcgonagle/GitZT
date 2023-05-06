@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "aws" {
-  access_key = CF_R2_ACCESS_KEY_ID
-  secret_key = CF_R2_SECRET_ACCESS_KEY
+  access_key = "CF_R2_ACCESS_KEY_ID"
+  secret_key = "CF_R2_SECRET_ACCESS_KEY"
   skip_credentials_validation = true
   skip_region_validation = true
   skip_requesting_account_id = true
