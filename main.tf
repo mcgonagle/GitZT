@@ -21,4 +21,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "cloudflare-bucket" {
   bucket = "my-tf-test-bucket2"
+  region = "enam"
+  acl = private
 }
