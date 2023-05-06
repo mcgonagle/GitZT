@@ -3,9 +3,9 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/terraform:1": {
-      "version": "${templateOption:version}",
-      "tflint": "${templateOption:tflint}",
-      "terragrunt": "${templateOption:terragrunt}"
+      "version": "latest",
+      "tflint": "latest",
+      "terragrunt": "latest"
     },
     "ghcr.io/dhoeric/features/terraform-docs:1": {
       "version": "latest"
@@ -30,7 +30,7 @@
     }
   },
   "remoteEnv": {
-    "TF_LOG": "'${templateOption:tfLog}",
-    "TF_LOG_PATH": "'${templateOption:tfLogPath}"
+    "TF_LOG": "trace",
+    "TF_LOG_PATH": "./terraform.log"
   }
 }
