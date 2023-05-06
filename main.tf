@@ -1,4 +1,16 @@
 terraform {
+  variable "CF_R2_ACCESS_KEY_ID" {
+    type        = string
+    description = "This is an example input variable using env variables."
+  }
+  variable "CF_R2_SECRET_ACCESS_KEY" {
+    type        = string
+    description = "This is another example input variable using env variables."
+  }
+  variable "CF_ACCOUNT_ID" {
+    type        = string
+    description = "This is another example input variable using env variables."
+  }
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -8,13 +20,13 @@ terraform {
 }
 
 provider "aws" {
-  access_key = TF_VAR_CF_R2_SECRET_ACCESS_KEY
-  secret_key = TF_VAR_CF_R2_ACCESS_KEY_ID
+  access_key = CF_R2_ACCESS_KEY_ID
+  secret_key = CF_R2_SECRET_ACCESS_KEY
   skip_credentials_validation = true
   skip_region_validation = true
   skip_requesting_account_id = true
   endpoints {
-    s3 = "https://TF_VAR_CF_ACCOUNT_ID.r2.cloudflarestorage.com"
+    s3 = "https://CF_ACCOUNT_ID.r2.cloudflarestorage.com"
   }
 }
 
