@@ -1,4 +1,4 @@
-name: terraform_run
+name: Terraform Run
 
 on: workflow_dispatch
 
