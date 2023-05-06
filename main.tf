@@ -8,17 +8,17 @@ terraform {
 }
 
 provider "aws" {
-  access_key = ${{ secrets.CF_R2_SECRET_ACCESS_KEY }}
-  secret_key = ${{ secrets.CF_R2_ACCESS_KEY_ID }}
+  access_key = TF_VAR_CF_R2_SECRET_ACCESS_KEY
+  secret_key = TF_VAR_CF_R2_ACCESS_KEY_ID
   skip_credentials_validation = true
   skip_region_validation = true
   skip_requesting_account_id = true
   endpoints {
-    s3 = "https://${{ secrets.CF_ACCOUNT_ID }}.r2.cloudflarestorage.com"
+    s3 = "https://TF_VAR_CF_ACCOUNT_ID.r2.cloudflarestorage.com"
   }
 }
 
 
 resource "aws_s3_bucket" "cloudflare-bucket" {
-  bucket = "my-tf-test-bucket"
+  bucket = "my-tf-test-bucket2"
 }
