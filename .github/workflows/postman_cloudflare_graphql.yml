@@ -1,6 +1,6 @@
 name: Postman Cloudflare GraphQL API Tests
 
-on: workflow_dispatch
+on: [ workflow_dispatch, issue_comment ]
 
 jobs:
   automated-api-tests:
