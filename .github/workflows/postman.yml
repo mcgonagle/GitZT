@@ -1,4 +1,4 @@
-name: Postman API R2 Test
+name: Postman HTTPBin Example
 
 on: workflow_dispatch
 
