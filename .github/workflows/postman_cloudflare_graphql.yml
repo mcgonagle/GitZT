@@ -17,7 +17,7 @@ jobs:
           postman collection run "26663889-779b46f2-038b-468a-864e-a4d6f8e661ab" -e "26663889-234dee14-7ed6-475c-b292-449a861cc8e8"
       - uses: actions/github-script@v6
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{secrets.GH_TOKEN}}
           script: |
             github.rest.issues.createComment({
               issue_number: 1,
