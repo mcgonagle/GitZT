@@ -1,8 +1,7 @@
 name: Postman HTTPBin Example Triggered by a Webhook 
 
 repository_dispatch:
-    types:
-      - webhook
+  types: webhook
 
 jobs:
   automated-api-tests:
