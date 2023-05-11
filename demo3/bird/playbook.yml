@@ -14,6 +14,7 @@
       owner: bird
       group: bird
       mode: '0640'
+    register: service_conf
 
   - name: Copy bird6.conf file
     copy:
@@ -30,4 +31,9 @@
       owner: root
       group: root
       mode: '0644'
+
+  - name: Restart bird
+    service:
+      name: bird
+      state: restarted
 ...
