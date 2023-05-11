@@ -1,0 +1,12 @@
+name: Postman HTTPBin Example on a Mac Self Hosted Runner
+
+on: workflow_dispatch
+
+jobs:
+  automated-api-tests:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Ansible
+        run: |
+          cd demo3/bird && /usr/local/bin/ansible-playbook ./playbook.yml 
