@@ -1,4 +1,4 @@
-name: Postman HTTPBin Example on a Mac Self Hosted Runner
+name: Ansible Bird Configuration Example on a Mac Self Hosted Runner
 
 on: workflow_dispatch
 
