@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_token = "${secrets.CF_API_TOKEN}"
+  api_token = var.api_token
 }
 
 resource "cloudflare_record" "www" {
