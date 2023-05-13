@@ -1,3 +1,6 @@
+variable "api_token" {}
+variable "zone_id" {}
+
 terraform {
   required_providers {
     cloudflare = {
