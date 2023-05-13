@@ -11,13 +11,14 @@ jobs:
       - uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.1.7
-          zone_id: ${{secrets.DNS_ZONE_ID}}
-          domain: 'tripartgroup.com'
-          api_token: ${secrets.CF_API_TOKEN}
 
       - run: terraform init
       - id: plan
         run: terraform plan -no-color
+        env:
+          TF_VAR_zone_id: "${{ secrets.DNS_ZONE_ID }}"
+          TF_VAR_domain: "${{ secrets.DOMAIN }}"
+          TF_VAR_api_token: "${secrets.CF_API_TOKEN}"
 
       - run: echo ${{ steps.plan.outputs.stdout }}
       - run: echo ${{ steps.plan.outputs.stderr }}
