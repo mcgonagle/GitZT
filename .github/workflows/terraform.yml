@@ -17,7 +17,7 @@ jobs:
         run: terraform plan -no-color
         env:
           TF_VAR_zone_id: "${{ secrets.DNS_ZONE_ID }}"
-          TF_VAR_domain: "${{ secrets.DOMAIN }}"
+          TF_VAR_domain: "${{ secrets.DNS_DOMAIN }}"
           TF_VAR_api_token: "${secrets.CF_API_TOKEN}"
 
       - run: echo ${{ steps.plan.outputs.stdout }}
