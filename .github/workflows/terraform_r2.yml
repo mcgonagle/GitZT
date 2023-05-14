@@ -6,6 +6,12 @@ on: workflow_dispatch
 jobs:
   terraform-run:
     runs-on: ubuntu-latest
+    strategy:
+      matrix: { env: ["demo1"] }
+    environment: ${{ matrix.env }}
+    defaults:
+      run:
+        working-directory: "./${{ matrix.env }}"
     steps:
       - uses: actions/checkout@v3
       - uses: hashicorp/setup-terraform@v2
@@ -14,7 +20,7 @@ jobs:
 
       - run: terraform init
       - id: plan
-        run: terraform plan -no-color -chdir=demo1
+        run: terraform plan -no-color 
         env:
           TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
           TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
@@ -22,7 +28,7 @@ jobs:
       
       - run: terraform apply
       - id: apply
-        run: terraform apply --auto-approve -chdir=demo1
+        run: terraform apply --auto-approve 
         env:
           TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
           TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
