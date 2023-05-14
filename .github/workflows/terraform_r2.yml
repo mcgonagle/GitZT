@@ -18,7 +18,14 @@ jobs:
         with:
           terraform_version: 1.1.7
 
-      - run: terraform init
+      - id: vars
+        run: |-
+          cat > pipeline.auto.tfvars <<EOF
+          AWS_DEFAULT_REGION = "us-east-1"
+          EOF
+      - id init
+        run: terraform init
+
       - id: plan
         run: terraform plan -no-color 
         env:
