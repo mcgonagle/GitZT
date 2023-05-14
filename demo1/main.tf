@@ -1,3 +1,8 @@
+variable "CF_R2_ACCESS_KEY_ID" {}
+variable "CF_R2_SECRET_ACCESS_KEY" {}
+variable "CF_ACCOUNT_ID" {}
+
+
 terraform {
   required_providers {
     aws = {
@@ -20,5 +25,5 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "cloudflare-bucket" {
-  bucket = "my-tf-test-bucket2"
+  bucket = "my-tf-test-bucket3"
 }
