@@ -23,6 +23,8 @@ jobs:
           cat > pipeline.auto.tfvars <<EOF
           AWS_DEFAULT_REGION = "us-east-1"
           EOF
+          export AWS_DEFAULT_REGION = "us-east-1"
+
       - id: init
         run: terraform init
 
