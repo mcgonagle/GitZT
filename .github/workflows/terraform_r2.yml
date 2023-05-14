@@ -5,7 +5,7 @@ on: workflow_dispatch
 
 
 env: 
-  env_var: ${{ vars.AWS_DEFAULT_REGION }}
+  env_var: ${{ vars.ENV_AWS_DEFAULT_REGION }}
 
 jobs:
   terraform-run:
