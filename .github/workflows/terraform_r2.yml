@@ -24,11 +24,13 @@ jobs:
         env:
           TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
           TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
-          TF_VAR_CF_ACCOUNT_ID: "${{secrets.CF_ACCOUNT_ID }}"
+          TF_VAR_CF_ACCOUNT_ID: "${{ secrets.CF_ACCOUNT_ID }}"
+          TF_VAR_AWS_REGION: "${{ secrets.AWS_REGION }}"
       
       - id: apply
         run: terraform apply --auto-approve 
         env:
           TF_VAR_CF_R2_ACCESS_KEY_ID: "${{ secrets.CF_R2_ACCESS_KEY_ID }}"
           TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
-          TF_VAR_CF_ACCOUNT_ID: "${{secrets.CF_ACCOUNT_ID }}"
+          TF_VAR_CF_ACCOUNT_ID: "${{ secrets.CF_ACCOUNT_ID }}"
+          TF_VAR_AWS_REGION: "${{ secrets.AWS_REGION }}"
