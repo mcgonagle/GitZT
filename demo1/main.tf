@@ -1,7 +1,6 @@
 variable "CF_R2_ACCESS_KEY_ID" {}
 variable "CF_R2_SECRET_ACCESS_KEY" {}
 variable "CF_ACCOUNT_ID" {}
-variable "AWS_DEFAULT_REGION" {}
 
 
 terraform {
