@@ -26,7 +26,6 @@ jobs:
           TF_VAR_CF_R2_SECRET_ACCESS_KEY: "${{ secrets.CF_R2_SECRET_ACCESS_KEY }}"
           TF_VAR_CF_ACCOUNT_ID: "${{secrets.CF_ACCOUNT_ID }}"
       
-      - run: terraform apply
       - id: apply
         run: terraform apply --auto-approve 
         env:
