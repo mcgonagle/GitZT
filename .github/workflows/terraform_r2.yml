@@ -3,6 +3,10 @@ name: Terraform R2 Run
 
 on: workflow_dispatch
 
+
+env: 
+  env_var: ${{ vars.AWS_DEFAULT_REGION }}
+
 jobs:
   terraform-run:
     runs-on: ubuntu-latest
