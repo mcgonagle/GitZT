@@ -1,5 +1,5 @@
 ---
-name: Terraform Run
+name: Terraform DNS Run
 
 on: workflow_dispatch
 
